@@ -131,17 +131,17 @@ This project demonstrates the effectiveness of Wazuh in detecting Netcat-based a
 
 Through real-time monitoring and automation, the system significantly enhances the security resilience of Linux servers and reduces response time to threats.
 
-🚀 8. Future Work
+## 8. Future Work
 
-Integrate threat intelligence feeds for proactive IP blacklisting
+*Integrate threat intelligence feeds for proactive IP blacklisting
 
-Expand detection to include additional reverse shell tools (e.g., ncat, socat)
+*Expand detection to include additional reverse shell tools (e.g., ncat, socat)
 
 Explore machine learning–based anomaly detection
 
 Extend monitoring across multiple Linux servers
 
-🛡️ Key Skills Demonstrated
+## Key Skills Demonstrated
 
 Linux Security Hardening
 
@@ -155,6 +155,4 @@ Threat Simulation & Validation
 
 SIEM Monitoring & Log Analysis
 
---
 <br> [READ REPORT](https://drive.google.com/file/d/1lKti23hWyqXCxj3XzdkaybHV5cQhCcNu/view?usp=drive_link)
---
