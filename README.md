@@ -133,13 +133,13 @@ Through real-time monitoring and automation, the system significantly enhances t
 
 ## 8. Future Work
 
-*Integrate threat intelligence feeds for proactive IP blacklisting
+**Integrate threat intelligence feeds for proactive IP blacklisting
 
-*Expand detection to include additional reverse shell tools (e.g., ncat, socat)
+**Expand detection to include additional reverse shell tools (e.g., ncat, socat)
 
-Explore machine learning–based anomaly detection
+**Explore machine learning–based anomaly detection
 
-Extend monitoring across multiple Linux servers
+**Extend monitoring across multiple Linux servers
 
 ## Key Skills Demonstrated
 
