@@ -5,47 +5,47 @@ Netcat Detection and Malicious IP Blocking
 Author: Michael Nwokocha
 Date: April 2025
 
-📌 1. Introduction
+# 1. Introduction
 
 This project focuses on improving the security posture of Linux systems by leveraging Wazuh, an open-source security monitoring platform.
 
 The primary goal is to:
 
-Detect Netcat-based unauthorized access
+- Detect Netcat-based unauthorized access
 
-Automatically block malicious IP addresses
+- Automatically block malicious IP addresses
 
-Strengthen host-based intrusion detection (HIDS)
+- Strengthen host-based intrusion detection (HIDS)
 
-Implement real-time monitoring with automated response
+- Implement real-time monitoring with automated response
 
-By integrating Wazuh with firewall rules, this project demonstrates proactive defense against reverse shell attacks and suspicious network activity.
+- By integrating Wazuh with firewall rules, this project demonstrates proactive defense against reverse shell attacks and suspicious network activity.
 
-🎯 2. Objectives
+# 2. Objectives
 
-Detect and alert on suspicious Netcat activity in real time
+- Detect and alert on suspicious Netcat activity in real time
 
-Identify and automatically block malicious IP addresses
+- Identify and automatically block malicious IP addresses
 
-Strengthen the Host-Based Intrusion Detection System (HIDS)
+- Strengthen the Host-Based Intrusion Detection System (HIDS)
 
-Demonstrate automation using custom rules and active response scripts
+- Demonstrate automation using custom rules and active response scripts
 
-🛠️ 3. Tools and Technologies Used
+# 3. Tools and Technologies Used
 
-Operating System: Ubuntu 22.04 LTS
+- Operating System: Ubuntu 22.04 LTS
 
-Security Platform: Wazuh Manager & Agent
+- Security Platform: Wazuh Manager & Agent
 
-Log Collection: Syslog, Auditd
+- Log Collection: Syslog, Auditd
 
-Network Tool (Attack Simulation): Netcat (nc)
+- Network Tool (Attack Simulation): Netcat (nc)
 
-Firewall: UFW (Uncomplicated Firewall)
+- Firewall: UFW (Uncomplicated Firewall)
 
-Scripting Language: Bash
+- Scripting Language: Bash
 
-SIEM Stack: Elasticsearch, Kibana (Wazuh Stack)
+- SIEM Stack: Elasticsearch, Kibana (Wazuh Stack)
 
 ⚙️ 4. Methodology
 4.1 Wazuh Installation and Configuration
