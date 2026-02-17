@@ -47,59 +47,58 @@ The primary goal is to:
 
 - SIEM Stack: Elasticsearch, Kibana (Wazuh Stack)
 
-⚙️ 4. Methodology
-4.1 Wazuh Installation and Configuration
+# 4. Methodology
+# 4.1 Wazuh Installation and Configuration
 
-Installed Wazuh Manager on a central server
+- Installed Wazuh Manager on a central server
 
-Installed Wazuh Agent on a monitored Linux host
+- Installed Wazuh Agent on a monitored Linux host
 
-Configured log collection from:
+- Configured log collection from:
 
-System logs
+- System logs
 
-Network activity
+- Network activity
 
-Auditd logs
+- Auditd logs
 
-4.2 Netcat Detection Setup
+# 4.2 Netcat Detection Setup
 
-Simulated reverse and bind shell attacks using Netcat
+- Simulated reverse and bind shell attacks using Netcat
 
-Created custom decoders and rules in Wazuh
+- Created custom decoders and rules in Wazuh
 
-Configured Wazuh to:
+# Configured Wazuh to:
 
-Parse logs
+- Parse logs
 
-Recognize Netcat execution patterns
+- Recognize Netcat execution patterns
 
-Generate real-time alerts
+- Generate real-time alerts
 
-4.3 Malicious IP Blocking
+# 4.3 Malicious IP Blocking
 
-Configured Wazuh Active Response
+- Configured Wazuh Active Response
 
-Developed a custom Bash script triggered upon detection
+- Developed a custom Bash script triggered upon detection
 
-Script automatically adds attacker IP to UFW deny list
+- Script automatically adds attacker IP to UFW deny list
 
-sudo ufw deny <attacker_ip>
+- sudo ufw deny <attacker_ip>
 
+- Validated real-time blocking using simulated attacks
 
-Validated real-time blocking using simulated attacks
+# 4.4 Testing and Validation
 
-4.4 Testing and Validation
+- Launched Netcat from external test machines
 
-Launched Netcat from external test machines
+- Confirmed alert generation in Wazuh Dashboard
 
-Confirmed alert generation in Wazuh Dashboard
+- Verified malicious IP was successfully blocked
 
-Verified malicious IP was successfully blocked
+- Tuned detection rules to reduce false positives
 
-Tuned detection rules to reduce false positives
-
-📊 5. Results
+# 5. Results
 
 ✅ Netcat activity detected within 3–5 seconds
 
@@ -109,27 +108,27 @@ Tuned detection rules to reduce false positives
 
 ✅ False positives minimized through rule tuning
 
-🚧 6. Challenges Faced
+# 6. Challenges Faced
 
-Fine-tuning Wazuh rules required deep understanding of log formats
+- Fine-tuning Wazuh rules required deep understanding of log formats
 
-Initial Wazuh agent connection failures due to:
+- Initial Wazuh agent connection failures due to:
 
-Firewall misconfiguration
+- Firewall misconfiguration
 
-Incorrect manager IP/port settings
+- Incorrect manager IP/port settings
 
-Service timeout errors
+- Service timeout errors
 
-Some IP blocking actions required elevated permissions
+- Some IP blocking actions required elevated permissions
 
-Encrypted Netcat traffic remains a detection limitation
+- Encrypted Netcat traffic remains a detection limitation
 
-🧠 7. Conclusion
+# 7. Conclusion
 
-This project demonstrates the effectiveness of Wazuh in detecting Netcat-based attacks and automatically responding by blocking malicious IP addresses.
+- This project demonstrates the effectiveness of Wazuh in detecting Netcat-based attacks and automatically responding by blocking malicious IP addresses.
 
-Through real-time monitoring and automation, the system significantly enhances the security resilience of Linux servers and reduces response time to threats.
+- Through real-time monitoring and automation, the system significantly enhances the security resilience of Linux servers and reduces response time to threats.
 
 ## 8. Future Work
 
@@ -143,16 +142,16 @@ Through real-time monitoring and automation, the system significantly enhances t
 
 ## Key Skills Demonstrated
 
-Linux Security Hardening
+- Linux Security Hardening
 
-Wazuh Rule Creation
+- Wazuh Rule Creation
 
-Active Response Configuration
+- Active Response Configuration
 
-Firewall Automation (UFW)
+- Firewall Automation (UFW)
 
-Threat Simulation & Validation
+- Threat Simulation & Validation
 
-SIEM Monitoring & Log Analysis
+- SIEM Monitoring & Log Analysis
 
 <br> [READ REPORT](https://drive.google.com/file/d/1lKti23hWyqXCxj3XzdkaybHV5cQhCcNu/view?usp=drive_link)
